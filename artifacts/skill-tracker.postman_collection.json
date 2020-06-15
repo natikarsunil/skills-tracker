@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "3cf8d5c9-66af-43f4-89ae-fa434c9fc666",
+		"name": "skill-tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create skill categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Programming\",\r\n    \"skills\": [\r\n        {\r\n            \"name\": \"Java\"\r\n        },\r\n        {\r\n            \"name\": \"Python\"\r\n        }\r\n    ],\r\n    \"skillType\": \"HARD_SKILL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/skills/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"skills",
+						"categories"
+					]
+				},
+				"description": "create new skill category"
+			},
+			"response": []
+		},
+		{
+			"name": "create skills",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"English\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/skills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get skill categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/skills/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"skills",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get skills",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/skills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\" : \"first\",\r\n  \"lastName\" : \"last\",\r\n  \"userName\" : \"firstlast\",\r\n  \"skillsMap\" : [ {\r\n    \"skillCategoryMapId\" : 1,\r\n    \"skillLevel\" : \"EXPERT\"\r\n  } ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete employees",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete skill",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/skills/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"skills",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete skill categories",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/skills/categories/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"skills",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get skill categories map",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/v1/skills-tracker/skills/categories/map",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"v1",
+						"skills-tracker",
+						"skills",
+						"categories",
+						"map"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

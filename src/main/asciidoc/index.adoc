@@ -1,0 +1,69 @@
+= SKILLS-TRACKER Rest documentation
+
+
+This is an example output for a service running at http://localhost:9091:
+
+You can also import rest endpoint collection "artifacts\skill-tracker.postman_collection.json" in postman.
+
+== POST Skills Example
+
+.request
+include::{snippets}/testCreateSkills_ReturnsOk/http-request.adoc[]
+
+.response
+include::{snippets}/testCreateSkills_ReturnsOk/http-response.adoc[]
+
+
+== GET Skills Example
+
+.request
+include::{snippets}/testGetSkills_ReturnsOk/http-request.adoc[]
+
+.response
+include::{snippets}/testGetSkills_ReturnsOk/http-response.adoc[]
+
+
+== POST Skill Category Example
+
+.request
+include::{snippets}/testCreateSkillCategories_ReturnsOk/http-request.adoc[]
+
+.response
+include::{snippets}/testCreateSkillCategories_ReturnsOk/http-response.adoc[]
+
+
+== GET Skill category Example
+
+.request
+include::{snippets}/testGetSkillCategories_ReturnsOk/http-request.adoc[]
+
+.response
+include::{snippets}/testGetSkillCategories_ReturnsOk/http-response.adoc[]
+
+
+== GET Skill category mapping Example
+
+.request
+include::{snippets}/testGetSkillCategoryMap_ReturnsOk/http-request.adoc[]
+
+.response
+include::{snippets}/testGetSkillCategoryMap_ReturnsOk/http-response.adoc[]
+
+
+== POST Employee Example
+
+.request
+include::{snippets}/testCreateEmployees_ReturnsOk/http-request.adoc[]
+
+.response
+include::{snippets}/testCreateEmployees_ReturnsOk/http-response.adoc[]
+
+
+== GET Employee Example
+
+.request
+include::{snippets}/testGetEmployees_ReturnsOk/http-request.adoc[]
+
+.response
+include::{snippets}/testGetEmployees_ReturnsOk/http-response.adoc[]
+
