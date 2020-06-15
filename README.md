@@ -3,14 +3,19 @@
 ### Installation steps
 
 Maven:
-mvn clan install
-mvn spring-boot:run
-Application base url : http://localhost:9091/
+
+ - mvn clan install
+ 
+ - mvn spring-boot:run
+ 
+    Application base url : http://localhost:9091/
 
 or 
 
 Docker:
-can build and run docker image from Doskerfile and docker-compose.yml file in root directory.
+
+Can build and run docker image from Dockerfile and docker-compose.yml file in root directory.
+
 
 
 ### Documentation
